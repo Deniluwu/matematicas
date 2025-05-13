@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación Completa de Expresiones Matemáticas</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">Matemáticas Avanzadas</div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#ejercicio1">Ejercicio 1</a></li>
+            <li><a href="#ejercicio2">Ejercicio 2</a></li>
+            <li><a href="#ejercicio3">Ejercicio 3</a></li>
+            <li><a href="#ejercicio4">Ejercicio 4</a></li>
+            <li><a href="#ejercicio5">Ejercicio 5</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Evaluación Completa de Expresiones Matemáticas</h1>
+        
+        <!-- Ejercicio 1 -->
+        <section id="ejercicio1" class="exercise-section">
+            <h2>1. Evaluación con variable z = 4.5</h2>
+            <div class="variables">
+                <p>Variable definida: <code>z = 4.5</code></p>
+            </div>
+            
+            <div class="ej">
+                <h3>(a) Expresión algebraica</h3>
+                <div class="mat">0.42<sup>4</sup> + 3.12<sup>2</sup> - 162.32 - 80.7</div>
+                <div id="result-a" class="result"></div>
+            </div>
+            
+            <div class="ej">
+                <h3>(b) Expresión con raíz cúbica</h3>
+                <div class="mat">(z<sup>3</sup> - 23) / (∛(z<sup>2</sup> + 17.5))</div>
+                <div id="result-b" class="result"></div>
+            </div>
+        </section>
+        
+        <!-- Ejercicio 2 -->
+        <section id="ejercicio2" class="exercise-section">
+            <h2>2. Evaluación con variable t = 3.2</h2>
+            <div class="variables">
+                <p>Variable definida: <code>t = 3.2</code></p>
+            </div>
+            
+            <div class="ej">
+                <h3>(a) Expresión exponencial</h3>
+                <div class="mat">½ e<sup>2t</sup> - 3.8 t<sup>3</sup></div>
+                <div id="result-t-a" class="result"></div>
+            </div>
+            
+            <div class="ej">
+                <h3>(b) Expresión racional</h3>
+                <div class="mat">(6t<sup>2</sup> + 6t - 2) / (t<sup>2</sup> - 1)</div>
+                <div id="result-t-b" class="result"></div>
+            </div>
+        </section>
+        
+        <!-- Ejercicio 3 -->
+        <section id="ejercicio3" class="exercise-section">
+            <h2>3. Evaluación con variables x = 6.5, y = 3.8</h2>
+            <div class="variables">
+                <p>Variables definidas: <code>x = 6.5</code>, <code>y = 3.8</code></p>
+            </div>
+            
+            <div class="ej">
+                <h3>(a) Expresión combinada</h3>
+                <div class="mat">(x² + y²)<sup>2/3</sup> + (xy)/(y - x)</div>
+                <div id="result-x-a" class="result"></div>
+            </div>
+            
+            <div class="ej">
+                <h3>(b) Expresión con raíz cuadrada</h3>
+                <div class="mat">√(x + y)/(x - y)² + 2x² - xy²</div>
+                <div id="result-x-b" class="result"></div>
+            </div>
+        </section>
+        
+        <!-- Ejercicio 4 -->
+        <section id="ejercicio4" class="exercise-section">
+            <h2>4. Evaluación con variables derivadas</h2>
+            <div class="variables">
+                <p>Variables definidas:</p>
+                <p><code>c = 4.6</code>, <code>d = 1.7</code></p>
+                <p><code>a = c·d²</code>, <code>b = (c + a)/(c - d)</code></p>
+            </div>
+            
+            <div class="ej">
+                <h3>(a) Expresión exponencial compleja</h3>
+                <div class="mat">
+                    [e<sup>(d - b)</sup> + ³√(c + a) - (c·a)<sup>d</sup>] / b
+                </div>
+                <div id="result-abcd-a" class="result"></div>
+            </div>
+            
+            <div class="ej">
+                <h3>(b) Expresión algebraica combinada</h3>
+                <div class="mat">
+                    d/c + (a/b)² - e<sup>d</sup> - a/b
+                </div>
+                <div id="result-abcd-b" class="result"></div>
+            </div>
+        </section>
+        
+        <!-- Ejercicio 5 -->
+        <section id="ejercicio5" class="exercise-section">
+            <h2>5. Verificación de Identidades Trigonométricas</h2>
+            <div class="variables">
+                <p>Sustituyendo <code>x = π/10</code> (18°):</p>
+            </div>
+            
+            <div class="ej">
+                <h3>(a) Identidad trigonométrica básica</h3>
+                <div class="mat">cos²x - sin²x = 1 - 2sin²x</div>
+                <div class="result left-side" id="trig-a-left"></div>
+                <div class="result right-side" id="trig-a-right"></div>
+                <div class="verification" id="trig-a-verification"></div>
+            </div>
+            
+            <div class="ej">
+                <h3>(b) Identidad con tangente</h3>
+                <div class="mat">tanx/(sinx - 2tanx) = 1/(cosx - 2)</div>
+                <div class="result left-side" id="trig-b-left"></div>
+                <div class="result right-side" id="trig-b-right"></div>
+                <div class="verification" id="trig-b-verification"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <p>&copy; 2023 Matemáticas Avanzadas - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="js/ejercicio.js"></script>
+</body>
+</html>
